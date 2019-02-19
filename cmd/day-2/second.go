@@ -34,6 +34,9 @@ func main() {
 
 		// Interesting conjecture... Which of these options is actually more performant?
 		// Above or below?
+		// above is worst-case 2n, but could be theoretically much faster
+		// Below is always n, but could be optimised with anoteher if/break statement
+		// Above is obviously more readable
 
 		// var threesPassed bool
 		// var twosPassed bool
@@ -46,6 +49,9 @@ func main() {
 		// 	if count == 2 && !twosPassed {
 		// 		twos = twos + 1
 		// 		twosPassed = true
+		// 	}
+		// 	if twosPassed && threesPassed {
+		// 		break
 		// 	}
 		// }
 
