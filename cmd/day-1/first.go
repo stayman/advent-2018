@@ -17,7 +17,7 @@ func main() {
 	}
 
 	vals := input.GetInput(filepath.Join(wd, "cmd", "day-1", "input.txt"))
-	var res int
+	var res uint64
 	for _, val := range vals {
 		intVal, err := strconv.Atoi(val)
 		if err != nil {
